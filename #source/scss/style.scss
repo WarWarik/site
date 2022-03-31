@@ -1,0 +1,96 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+body{
+	font-family: "Lato", sans-serif;
+}
+.wraper {
+}
+.container {
+	width: 100%;
+	height: 100%;
+}
+.header {
+	background-color: #eceef5;
+	height: 85px;
+	& a {
+		color: #4d4959;
+	}
+	&__body {
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__menu {
+		max-width: 618px;
+		margin: 0 auto;
+	}
+	&__row {
+		height: 85px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__row li {
+		flex: 0 1 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__row li:nth-child(2):before,
+	&__row li:nth-child(5):before {
+		content: ".";
+		position: relative;
+		right: 35px;
+	}
+	&__img {
+	}
+}
+
+.footer {
+	height: 250px;
+	background-color: #f7f7f7;
+	&__row {
+		display: flex;
+	}
+	&__list {
+		display: flex;
+		//height: 250px;
+		flex: 1 1 33.333%;
+		justify-content: center;
+		align-items: center;
+	}
+	&__info {
+	}
+	&__titel {
+		font-size: 16px;
+		font-weight: 700;
+		color: #8d9092;
+		line-height: 17.87px;
+	}
+	&__text-info {
+		font-size: 14px;
+		font-style: italic;
+		color: #a7a9ab;
+		line-height: 17.87px;
+	}
+	&__media {
+	}
+	img{
+		margin: 0 15px 0 0;
+	}
+	img:last-child{
+		margin: 0;
+	}
+	&__yebo {
+	}
+	&__yebo-text {
+		color: #848789;
+		font-size: 14px;
+		font-style: italic;
+		margin: 0 10px 0 0;
+	}
+	&__yebo-logo {
+	}
+}
